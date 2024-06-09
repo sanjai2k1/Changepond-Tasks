@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Heaven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="pngwing.com.png" />
+    <style>
+      .heightOfCarousel {
+        height: 500px;
+      }
+      .custom-hr {
+            display: block;
+            width: 100%;
+            max-height: 100px;
+            margin: 20px auto;
+        }
+       
+        .nav-item:hover{
+          background-color: gold;
+        }
+        .carousel-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.carousel-subtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #666;
+    text-align: center;
+}
+
+.service{
+  height: 3em;
+  width: 3em;
+}
+.header-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+            
+        }
+        header,footer {
+            background: linear-gradient(45deg, #FFD700, #FFDF00, #F0E68C);
+           
+           
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div
+        class="container d-flex flex-wrap blur justify-content-center align-items-center"
+      >
+        <a
+          href="home.html"
+          class="d-flex align-items-center  me-lg-auto link-body-emphasis text-decoration-none"
+        >
+          <img src="pngwing.com.png" height="100px" width="100px" alt="" />
+          <span class="h1 header-title ">Diamond Heaven</span>
+        </a>
+        
+        <form class="d-flex justify-content-around" role="search">
+          <input
+            type="search"
+            class="form-control mx-3"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button type="button" class="btn btn-warning ">Search</button>
+          
+        </form>
+      
+      </div>
+      <nav
+      class="d-flex navbar navbar-expand-lg navbar-light  justify-content-center p-3 mt-1 border-bottom border-secondary"
+    >
+      <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
+        <li class="nav-item"><a href="home.html" class="nav-link px-2 link-dark mx-3 fs-4">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 link-dark mx-3 fs-4">About</a></li>
+        <li class="nav-item"><a href="jewellery.html" class="nav-link px-2 link-dark mx-3 fs-4">Jewellery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 link-dark mx-3 fs-4">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <!-- Contact 1 - Bootstrap Brain Component -->
+    <section class=" py-3 py-md-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Contact</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="bg-white border rounded shadow-sm overflow-hidden">
+              <form action="#!">
+                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                  <div class="col-12">
+                    <label for="fullname" class="form-label"
+                      >Full Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullname"
+                      name="fullname"
+                      value=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label"
+                      >Email <span class="text-danger">*</span></label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                          />
+                        </svg>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        value=""
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Contact Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-telephone"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                          />
+                        </svg>
+                      </span>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label"
+                      >FeedBack <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid text-center mt-5">
+        <div class="row justify-content-center">
+          <div class=" text-center">
+            <h2 class="mb-4 display-5 ">Visit Our Store</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.255634861786!2d80.21981569999998!3d12.8267507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a688f3d32f1%3A0x769131751ee5a50e!2sChangepond%20Technologies!5e0!3m2!1sen!2sin!4v1717841089537!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-3 mt-4 border-top border-secondary">
+      <img src="pngwing3.png" alt="" class="custom-hr">
+      <p class="text-center text-muted">© All Rights Reserved By Changepond.</p>
+      <div class="d-flex justify-content-end">
+        This website is designed and developed by  &nbsp;<strong>SANJAI J</strong>
+      </div>
+    </footer>
+  </body>
+</html>
