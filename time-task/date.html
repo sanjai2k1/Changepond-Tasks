@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+   
+
+        .inner{
+            border: 5px solid black;
+            height: 550px;
+            width: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgb(25, 168, 20);
+            box-shadow: 10px 10px 10px 10px;
+        }
+
+
+        .time{
+            font-size: 88px;
+            font-weight: 600;
+            color: yellow;
+        }
+
+        .time:hover{
+           transform: scale(1.1);
+           text-shadow: 5px 5px tomato;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div> -->
+   
+        <div class="inner">
+            <div id="d10" class="time"></div>
+        </div>
+    
+    <script>
+        // let dateObj = new Date()
+        // document.getElementById("d1").innerHTML=dateObj;
+        // document.getElementById("d2").innerHTML=dateObj.getFullYear();
+        // document.getElementById("d3").innerHTML=dateObj.getHours();
+        // document.getElementById("d4").innerHTML=dateObj.getMinutes();
+        // document.getElementById("d5").innerHTML=dateObj.getDate();
+        // document.getElementById("d6").innerHTML=dateObj.getDay();
+
+        function myclock() {
+            let mytime = new Date();
+            document.getElementById("d10").innerHTML = mytime.toLocaleTimeString();
+        }
+        setInterval(myclock, 1000);
+    </script>
+</body>
+
+</html>
