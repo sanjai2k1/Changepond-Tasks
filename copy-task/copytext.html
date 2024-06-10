@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+
+        <textarea name=""  id="temproray"></textarea>
+        <button id="same" onclick="copy()">same as temp</button>
+        <textarea name=""  id="permanent"></textarea>
+    
+
+    <script>
+
+        let temproray = document.getElementById("temproray")
+        let permanent = document.getElementById("permanent")
+
+        let copy = ()=> permanent.innerHTML=temproray.value
+
+    </script>
+</body>
+</html>
