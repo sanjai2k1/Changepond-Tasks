@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="../assets/images/Rajinikant.jfif" id="img" alt="" height="200px" width="200px">
+    <h1 id="name">Rajinikant</h1>
+    <button class="buttons" value="0" >Rajinikant</button>
+    <button class="buttons"  value="1" >prabhas</button>
+    <button class="buttons"  value="2">tammana</button>
+    <button class="buttons"  value="3">Pawan Kallyan</button>
+    <button class="buttons"  value="4" >Sharukh</button>
+    <button class="buttons"  value="5">Aaliya bhat</button>
+    <script>
+
+        let buttons = document.getElementsByClassName("buttons")
+        let img = document.getElementById("img")
+        let heading = document.getElementById("name")
+        const images = ["Rajinikant.jfif","prabhas.jpg","tammana.jfif","Pawan-Kallyan.jpg","Sharukh.jfif","Aaliya-bhat.jfif","Rajinikant.jfif"]
+        for (let button of buttons) {
+            button.addEventListener("click", () => {
+                img.src = `../assets/images/${images[parseInt(button.value)]}`
+                heading.innerHTML=button.innerHTML
+            })
+        }
+
+
+    </script>
+</body>
+
+</html>
