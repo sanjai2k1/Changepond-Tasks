@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+
+<script>
+//   how to create object of date class
+let dateObj = new Date();
+document.getElementById("d1").innerHTML = dateObj;
+document.getElementById("d2").innerHTML = dateObj.getFullYear();
+document.getElementById("d3").innerHTML = dateObj.getHours();
+document.getElementById("d4").innerHTML = dateObj.getMinutes();
+document.getElementById("d5").innerHTML = dateObj.getDate();
+document.getElementById("d6").innerHTML = dateObj.getDay();
+let today = dateObj.getDay();
+
+switch(today){
+    case 0:{
+        document.getElementById("d7").innerHTML = "Today is Sunday";
+        break;
+    }
+    case 1:{
+        document.getElementById("d7").innerHTML = "Today is Monday";
+        break;
+    }
+    case 2:{
+        document.getElementById("d7").innerHTML = "Today is Tuesday";
+        break;
+    }
+    case 3:{
+        document.getElementById("d7").innerHTML = "Today is Wednesday";
+        break;
+    }
+    case 4:{
+        document.getElementById("d7").innerHTML = "Today is Thursday";
+        break;
+    }
+    case 5:{
+        document.getElementById("d7").innerHTML = "Today is Friday";
+        break;
+    }
+    case 6:{
+        document.getElementById("d7").innerHTML = "Today is Saturday";
+        break;
+    }
+}
+
+document.getElementById("d8").innerHTML = dateObj.getMonth();
+//  how to set date and time 
+
+let date = new Date("2015","02","10","10","55","30")
+document.getElementById("d9").innerHTML = date;
+
+// how to create digital clock 
+
+function myclock(){
+    let mytime=new Date();
+    document.getElementById("d10").innerHTML = mytime.toLocaleTimeString();
+}
+// myclock()
+setInterval(myclock,1000);
+
+let month = dateObj.getMonth()
+switch(month){
+    case 0:{
+        document.getElementById("d11").innerHTML = "January";
+        break;
+    }
+    case 1:{
+        document.getElementById("d11").innerHTML = "Febraruary";
+        break;
+    }
+    case 2:{
+        document.getElementById("d11").innerHTML = "March";
+        break;
+    }
+    case 3:{
+        document.getElementById("d11").innerHTML = "April";
+        break;
+    }
+    case 4:{
+        document.getElementById("d11").innerHTML = "May";
+        break;
+    }
+    case 5:{
+        document.getElementById("d11").innerHTML = "June";
+        break;
+    }
+    case 6:{
+        document.getElementById("d11").innerHTML = "July";
+        break;
+    }
+    case 7:{
+        document.getElementById("d11").innerHTML = "August";
+        break;
+    }
+    case 8:{
+        document.getElementById("d11").innerHTML = "september";
+        break;
+    }
+    case 9:{
+        document.getElementById("d11").innerHTML = "October";
+        break;
+    }
+    case 10:{
+        document.getElementById("d11").innerHTML = "November";
+        break;
+    }
+    case 11:{
+        document.getElementById("d11").innerHTML = "December";
+        break;
+    }
+}
+
+
+</script>
+
+
+
+</body>
+</html>
