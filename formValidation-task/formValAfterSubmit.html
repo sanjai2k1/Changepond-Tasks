@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formAfterSub.js"></script>
+    <link rel="stylesheet" href="formVal.css">
+</head>
+<body>
+    <form  class="box" name="myform" onsubmit="return checkAll()">
+        <div>
+        <label for="">Enter Your First Name</label>
+        <input type="text" name="fname" id="fname"><br><br>
+    </div>
+    <div>
+        <label for="">Enter Your Last Name</label>
+        <input type="text" name="lname" id="lname"><br><br>
+    </div>
+    <div>
+        <label for="">Enter Your Password </label>
+        <input type="password" name="password" id="password"><br><br>
+    </div>
+    <div>
+        <label for="">Enter Your email </label>
+        <input type="text" name="email" id="email"><br><br>
+    </div>
+    <div>
+        <label for="">Enter Your Contact </label>
+        <input type="text" name="contact" id="contact"><br><br>
+    </div>
+    <div>
+
+        <label for="">select Gender</label> <br>
+        <input type="radio" name="ugender" id="male" value="male"> Male
+        <input type="radio" name="ugender" id="female" value="female"> Female
+        
+    </div>
+    <div>
+
+        <label for="">select qualification</label> <br>
+        <input type="checkbox" name="uedu" id="ssc" value="SSC"> SSC
+        <input type="checkbox" name="uedu" id="hsc" value="HSC"> HSC
+        <input type="checkbox" name="uedu" id="ug" value="UG"> UG
+        <input type="checkbox" name="uedu" id="pg" value="PG"> PG
+        <input type="checkbox" name="uedu" id="masters" value="masters"> Masters
+    </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

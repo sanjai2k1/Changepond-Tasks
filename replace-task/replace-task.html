@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: crimson;
+}
+.child {
+  display: inline-block;
+  
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+input{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+}
+textarea{
+    height: 300px;
+    width: 300px;
+}
+button{
+    height: 45px;
+    margin: 15px;
+    background-color: aqua;
+    
+}
+    </style>
+</head>
+<body>
+    <div class='parent'>
+        <div class='child'>
+    <textarea name="display-text" id="display-text"></textarea>
+</div>
+<div class='child'>
+    <input type="text"  id="input-text-1" placeholder="enter text">
+    <input type="text"  id="input-text-2" placeholder="replace text">
+    <button type="button" id="replace-button" onclick="replace_click()" >replace text</button>
+    <button type="button" id="replace-all-button" onclick="replace_all_click()">replace all text</button>
+</div>
+</div>
+
+<script>
+    let display_text = document.getElementById("display-text") 
+    let replace_button = document.getElementById("replace-button") 
+    let replace_all_button = document.getElementById("replace-all-button") 
+    let input_text_1 = document.getElementById("input-text-1")
+    let input_text_2 = document.getElementById("input-text-2")
+
+    const replace_click = ()=> display_text.value= display_text.value.replace(input_text_1.value,input_text_2.value)
+    const replace_all_click = ()=>  display_text.value= display_text.value.replaceAll(input_text_1.value,input_text_2.value)
+
+
+
+
+
+    
+
+    
+</script>
+</body>
+</html>
