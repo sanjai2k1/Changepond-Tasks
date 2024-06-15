@@ -4,5 +4,17 @@
 
 .show{
     display: block;
+    height: 400px;
 }
 
+body{
+    background-image: linear-gradient(to right top, #99b6e2, #19cdfb, #00e1e1, #00ed94, #a8eb12);
+}
+
+.button{
+    min-height: 100px;
+}
+
+.box{
+    height: 700px;
+}
