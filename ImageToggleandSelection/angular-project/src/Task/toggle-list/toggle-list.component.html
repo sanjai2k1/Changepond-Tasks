@@ -1,0 +1,14 @@
+<h1>toggle-list </h1>
+
+<button type="button"  (click)="bikeClick()">Bike List</button>
+<button type="button"  (click)="carClick()">Car List</button>
+
+<ul >
+    <li *ngFor="let item of clicke " (click)="liClick(item)">{{item}}</li>
+
+</ul>
+
+<hr>
+
+<p *ngIf="data">you have clicked <strong> {{data}}</strong></p>
+

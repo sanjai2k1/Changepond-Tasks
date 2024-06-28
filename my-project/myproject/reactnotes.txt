@@ -1,0 +1,164 @@
+18/6/2024
+
+Technology you must know
+-Html,css,js(basic js,ES5,ES6 ,oops)
+
+-s/w pre-requisit
+-nodejs
+-npm
+-editor
+
+*there  are two way to create react project
+1.by npx: in this case no need to install configuration file
+npx create-react-app appname
+cd appname
+npm start
+
+2.npm: we need to install configuration file
+npm create-react-app appname
+create-react-app appname
+cd appname
+npm start
+
+*react- it is javascript library.
+-it craaate single page applicaij(SPA)
+-it is not framework
+
+react work on comonent basis
+-in ract root component name is app.js
+
+*what is component
+-it is partial par tof react project
+-it can be any part of project.
+-wih we can reuse.
+
+*In react we have wo tyes of component.
+1.function component: when your main goal is to create UI
+2.class component: when you need to deal with essential data and need to write complex logic in that case we use it.
+
+*How to display individual component output.
+
+
+*props(property): it is paramter or functional paramter which is use to pass data inside component.
+-props return data in objec format
+-in function component we can acces rops like props.propsname.
+-in class component we can access prop like this.props.propsname
+
+*JSX(javascript XML):
+-it makes react code easy and allows us to write html code in react component.
+-in jsx we have to write one parent element to wrap another child element,parent element can be any block element.
+
+*State in class component
+-State in class component it is used to handle essential data
+-State in  react is use to handle essential data in component
+-in class component we write state in constructor
+-state return us object type of data
+-we can access data outsid state by writing this.state.property
+
+
+*destructuring of state
+*destructuring of props
+
+create a class component with name myDetails containing props fname,lname,email,contact as well as stae with property gender,matial status,address and display is data on browser
+
+
+*meythod and event.
+
+Rendering: displ component output or view on browser
+*conditional rendering : display component output of basis of conditional
+1.if else : if condition is true then if block will render otherwise else block 
+2.element as variable : in this we store data in variable and return tha variable as element
+3.use of ternary operator : it is an shorthand of if else
+syntax : condition ? truepart : elsepart
+4.use of short-circuit :in this if condition is true then and only then it will return output.
+-it is denoted by &&.
+
+*component interaction:
+-fetching data from parent comonent to child component
+-how to make parent child
+
+internal css: we can write css inside component
+external css:in this we creae a seperate file
+module css: you have to write in sperate
+filename.module.css
+then we have to import it in component.
+
+
+
+HOC (Higher order Component):
+when we have common bussiness logic and we want to share with multiple component for that we use it.
+-in hoc we can share data from function component to other component.
+-in hoc we pass other function as parameter
+
+npm i bootstrap
+use its classes in react component
+
+material ui
+-it is an external library which provide inbuild components to react
+-it makes react app atractive ,responsive,
+npm install @mui/material @emotion/react @emotion/styled
+
+
+
+
+*Routing
+
+navigation of components
+
+
+types of Routing
+1.naming Routing : display component output b y writting its path name is browser url
+2. default routing : display component output without writing path in browser url.
+3. parameterize routing : passing parameter with routing path and display component output.
+4.child routing:in this we display child component output in parent we import <Outlet/> in parent component and write in render method as tag.
+5.default routing: display component output when user enter wrong path in browser url.
+-it is denoted by *
+-it must be last routing ,it below routing will never work
+
+
+PageNotFound:
+
+
+virtualDom:
+in react instead of manipulating browser dom directly react create virtual dom in its memory,where it does all necessory changes in it and dom changes that needs to be change.
+
+-Hooks work only with function component
+-hoks always use at top level component
+-hooks can not be render conditionally
+
+*List of Hooks
+1.useState Hooks : it allows us to use state in function component.
+                    -it give two  values 
+                    1.current-state,
+                    2.function-to-update
+                    -before use first we have to import from react library
+
+2.UseEffect Hooks : 
+it is use to perform sideeffect operation in function component after render of it.
+sideeffect means what, fetching data from server use of timer
+it takes 2 parameter in it,1.callback function 2.dependency
+-first we have to import it from react libarry before use of it.
+
+syntax: UseEffect(()=>{},[])
+case1:when no dependcy pass,it will execute after every render
+case 2: when we want to execute useEffect only once render
+-in this we pass dependency value as blank arary
+
+case 3:when we want to execute useEffect hook as our choice
+-to achieve we have sate or props as dependency value.
+-as state or prop value change then useeffect will execute.
+
+3.useConext Hooks : 
+4.UseRef Hooks
+5.UseReducer Hooks
+6.useMemo Hooks
+7.useCallback Hooks
+8.custom Hooks
+
+*Form Validation
+*Rest Fake API
+*create json file with data and upload it on json server
+cd src/shared/database (press enter)
+json-server --watch -p -8888 db.json
+
+

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+}
+.block{
+    border: 2px solid black;
+    width: 20%;
+    float: left;
+}
+@media screen and (max-width:1200px) {
+    .block{
+        width:25%
+    }
+}
+@media screen and (max-width:992px) {
+    .block{
+        width:33.33%;
+    }
+}
+@media screen and (max-width:768px){
+    .block{
+        width:50%;
+    }
+}
+@media screen and (max-width:576px) {
+    .block{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .block{
+        display:block;
+    }
+}

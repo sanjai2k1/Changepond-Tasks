@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "uname": "admin@gmail.com",
+      "upass": "admin"
+    },
+    {
+      "id": 2,
+      "uname": "user@gmail.com",
+      "upass": "user"
+    },
+    {
+      "id": 3,
+      "uname": "hello@gmail.com",
+      "upass": "hello"
+    }
+  ],
+  "employee": [
+    {
+      "id": "1",
+      "name": "Dhanish Kumar",
+      "address": "Chenai"
+    },
+    {
+      "id": "2",
+      "name": "Hamsavanan",
+      "address": "Villupuram"
+    },
+    {
+      "id": "3",
+      "name": "Karuppu",
+      "address": "Karaikudi"
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "product_name": "PC",
+      "price": 50000,
+      "companay": "dell"
+    },
+    {
+      "id": "2",
+      "product_name": "WaterBottlexc",
+      "price": "10009",
+      "companay": "tupperwarecdc"
+    },
+    {
+      "id": "3",
+      "product_name": "Monitor",
+      "price": 10000,
+      "companay": "acer"
+    },
+    {
+      "id": "5",
+      "product_name": "Duster",
+      "price": 50,
+      "companay": "Changepond"
+    },
+    {
+      "id": "f610",
+      "product_name": "sads",
+      "price": "4000",
+      "companay": "dffd"
+    },
+    {
+      "id": "fc60",
+      "product_name": "sasssa",
+      "price": "500000",
+      "companay": "dffd"
+    }
+  ]
+}
