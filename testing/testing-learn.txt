@@ -1,0 +1,38 @@
+TDD
+
+Test first development approach
+
+write tests before we write just enough production code.
+
+To make the test pass,refractor the productin code.
+
+main goal is to check the specification not validation.
+
+making sure requirements are aligned.
+
+start
+
+add a new test
+
+run the test
+	
+make changes
+
+run the tests
+
+
+BDD 
+
+It is a software development approach on TDD.
+
+Document the discussions on requirements/features in a natural language.
+
+Improves  the communication between tech and non tech members.
+
+Divide user stories into real scenaries with examples instead of test cases.
+
+Improves the tracking of test coverage.
+
+
+user story -> discover -> formulate -> automate.
+
