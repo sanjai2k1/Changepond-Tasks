@@ -1,0 +1,33 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1719920508835,1300,Homepage,200,OK,Thread Group 1-1,text,true,,36012,276,1,1,https://rajalakshmi.org/profile-principal.php,155,0,102
+1719920508835,165,Homepage-0,302,Found,Thread Group 1-1,text,true,,628,138,1,1,http://rajalakshmi.org/profile-principal.php,155,0,102
+1719920509005,1130,Homepage-1,200,OK,Thread Group 1-1,text,true,,35384,138,1,1,https://rajalakshmi.org/profile-principal.php,1116,0,1106
+1719920510138,34,Aeropage,200,OK,Thread Group 1-1,text,true,,37713,272,1,1,https://rajalakshmi.org/dept-aero-intro.php,21,0,0
+1719920510138,21,Aeropage-0,302,Found,Thread Group 1-1,text,true,,623,136,1,1,http://rajalakshmi.org/dept-aero-intro.php,21,0,0
+1719920510160,12,Aeropage-1,200,OK,Thread Group 1-1,text,true,,37090,136,1,1,https://rajalakshmi.org/dept-aero-intro.php,9,0,0
+1719920510173,29,Facilitiespage,200,OK,Thread Group 1-1,text,true,,33715,274,1,1,https://rajalakshmi.org/facilities-admin.php,17,0,0
+1719920510173,17,Facilitiespage-0,302,Found,Thread Group 1-1,text,true,,625,137,1,1,http://rajalakshmi.org/facilities-admin.php,17,0,0
+1719920510190,12,Facilitiespage-1,200,OK,Thread Group 1-1,text,true,,33090,137,1,1,https://rajalakshmi.org/facilities-admin.php,9,0,0
+1719920510202,31,Facilitiespage,200,OK,Thread Group 1-1,text,true,,36152,276,1,1,https://rajalakshmi.org/research-facility.php,19,0,0
+1719920510202,19,Facilitiespage-0,302,Found,Thread Group 1-1,text,true,,627,138,1,1,http://rajalakshmi.org/research-facility.php,19,0,0
+1719920510221,12,Facilitiespage-1,200,OK,Thread Group 1-1,text,true,,35525,138,1,1,https://rajalakshmi.org/research-facility.php,9,0,0
+1719920510234,30,PlacementPage,200,OK,Thread Group 1-1,text,true,,36874,260,1,1,https://rajalakshmi.org/placement.php,18,0,0
+1719920510234,18,PlacementPage-0,302,Found,Thread Group 1-1,text,true,,611,130,1,1,http://rajalakshmi.org/placement.php,18,0,0
+1719920510252,12,PlacementPage-1,200,OK,Thread Group 1-1,text,true,,36263,130,1,1,https://rajalakshmi.org/placement.php,10,0,0
+1719920510264,29,Aluminipage,200,OK,Thread Group 1-1,text,true,,34363,272,1,1,https://rajalakshmi.org/alumni-director.php,19,0,0
+1719920510264,19,Aluminipage-0,302,Found,Thread Group 1-1,text,true,,623,136,1,1,http://rajalakshmi.org/alumni-director.php,19,0,0
+1719920510283,10,Aluminipage-1,200,OK,Thread Group 1-1,text,true,,33740,136,1,1,https://rajalakshmi.org/alumni-director.php,7,0,0
+1719920510294,37,Naacpage,200,OK,Thread Group 1-1,text,true,,53583,364,1,1,https://rajalakshmi.org/NAAC/,18,0,0
+1719920510294,18,Naacpage-0,302,Found,Thread Group 1-1,text,true,,593,121,1,1,http://rajalakshmi.org/NAAC,18,0,0
+1719920510312,6,Naacpage-1,301,Moved Permanently,Thread Group 1-1,text,true,,632,121,1,1,https://rajalakshmi.org/NAAC,6,0,0
+1719920510318,13,Naacpage-2,200,OK,Thread Group 1-1,text,true,,52358,122,1,1,https://rajalakshmi.org/NAAC/,9,0,0
+1719920510331,31,Aluminipage,200,OK,Thread Group 1-1,text,true,,36020,278,1,1,https://rajalakshmi.org/alumni-association.php,18,0,0
+1719920510331,18,Aluminipage-0,302,Found,Thread Group 1-1,text,true,,629,139,1,1,http://rajalakshmi.org/alumni-association.php,18,0,0
+1719920510349,13,Aluminipage-1,200,OK,Thread Group 1-1,text,true,,35391,139,1,1,https://rajalakshmi.org/alumni-association.php,8,0,0
+1719920510363,31,Coepage,200,OK,Thread Group 1-1,text,true,,72177,248,1,1,https://rajalakshmi.org/coe.php,16,0,0
+1719920510363,17,Coepage-0,302,Found,Thread Group 1-1,text,true,,599,124,1,1,http://rajalakshmi.org/coe.php,16,0,0
+1719920510380,14,Coepage-1,200,OK,Thread Group 1-1,text,true,,71578,124,1,1,https://rajalakshmi.org/coe.php,8,0,0
+1719920510394,35,Documentpage,200,OK,Thread Group 1-1,text,true,,42769,361,1,1,https://rajalakshmi.org/UGC/,16,0,0
+1719920510394,16,Documentpage-0,302,Found,Thread Group 1-1,text,true,,591,120,1,1,http://rajalakshmi.org/UGC,16,0,0
+1719920510411,6,Documentpage-1,301,Moved Permanently,Thread Group 1-1,text,true,,630,120,1,1,https://rajalakshmi.org/UGC,6,0,0
+1719920510417,12,Documentpage-2,200,OK,Thread Group 1-1,text,true,,41548,121,1,1,https://rajalakshmi.org/UGC/,8,0,0
