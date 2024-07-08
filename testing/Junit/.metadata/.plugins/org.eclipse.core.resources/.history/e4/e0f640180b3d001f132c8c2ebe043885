@@ -1,0 +1,57 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.Test;
+
+public class AmazonCreateAnAccountPageTest {
+
+	AmazonCreateAnAcoountpage a = new AmazonCreateAnAcoountpage();
+	
+	@Test
+	void YourNameTest() {
+		String expectedFn = "sanjai";
+		String expectedLn = "J";
+		String actualResult = a.YourName("sanjai", "J");
+		assertAll(
+		()->assertEquals(a.YourName(expectedFn, expectedLn), actualResult,"Please enter correct"),
+		()->assertEquals(a.YourName(expectedFn, expectedLn), actualResult)
+				);
+	}
+	
+	
+	@Test
+	void  checkpasswordTest() {
+		boolean expectedPassString=true;
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter password");
+		String actualPassString = in.nextLine();
+		assertEquals(expectedPassString,a.checkpassword(actualPassString),"length must be greater than 6");
+		
+		
+		
+	}
+	
+	@Test
+	void MobNoAndEmailTest() {
+		
+		long expectedMobileNo = 9176071379l;
+		String expectedEmailID = "abcd@gmail.com";
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter mobile no");
+		long actualMobileNo = in.nextLong();
+		String actualEmailId = in.nextLine();
+		String actualResultString = a.MobNoAndEmail(String.valueOf(actualMobileNo), actualEmailId);
+		String expectedResultString = a.MobNoAndEmail(String.valueOf(expectedMobileNo), expectedEmailID);
+		assertEquals(expectedResultString,actualResultString,"Mobile and email are not entered correctly");
+		
+		
+		
+		
+	}
+	
+	
+}

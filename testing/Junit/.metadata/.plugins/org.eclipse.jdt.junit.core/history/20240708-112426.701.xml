@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorProjectTest" project="JUnitProjectTest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="io.cal.CalculatorProjectTest" time="0.035" displayname="CalculatorProjectTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.CalculatorProjectTest]">
+    <testcase name="positiveTest" classname="io.cal.CalculatorProjectTest" time="0.035" displayname="positiveTest()" uniqueid="[engine:junit-jupiter]/[class:io.cal.CalculatorProjectTest]/[method:positiveTest()]">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The method assertEquals(short, short, String) in the type Assertions is not applicable for the arguments (boolean, () -&gt; {}, String)
+	The target type of this expression must be a functional interface
+&#13;
+	at io.cal.CalculatorProjectTest.positiveTest(CalculatorProjectTest.java:31)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

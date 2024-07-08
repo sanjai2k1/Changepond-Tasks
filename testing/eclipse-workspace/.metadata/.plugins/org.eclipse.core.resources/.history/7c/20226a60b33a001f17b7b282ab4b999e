@@ -1,0 +1,55 @@
+package com.APITesting;
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.*; // Import the 'when' method
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+public class PutPatchandDeleteRequest {
+	
+	
+	
+	public void PutRequest() {
+	
+	JSONObject request = new JSONObject();
+	
+	baseURI = "https://reqres.in/api";
+	
+	request.put("name", "Ajith");
+	request.put("job", "Developer");
+	
+	given().header("Content-Type","application/json").
+	contentType(ContentType.JSON).accept(ContentType.JSON).
+	body(request.toJSONString()).post("/users/2").then().statusCode(201).log().all();
+			
+	}
+	
+	
+	@Test
+	public void PatchRequest() {
+		baseURI = "https://reqres.in/api";
+
+		JSONObject request = new JSONObject();
+		request.put("name", "Ajith");
+		request.put("job", "Developer");
+		
+		given().header("Content-Type","application/json").
+		contentType(ContentType.JSON).accept(ContentType.JSON).
+		body(request.toJSONString()).patch("/users/2").then().statusCode(200).log().all();
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	public void DELETERequest() {
+		baseURI="https://reqres.in";
+		
+	}
+
+}

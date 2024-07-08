@@ -1,0 +1,26 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class AmazonCreateAnAccountPageTest {
+
+	AmazonCreateAnAcoountpage a = new AmazonCreateAnAcoountpage();
+	
+	@Test
+	void YourNameTest() {
+		String expectedFn = "sanai";
+		String expectedLn = "J";
+		String actualResult = a.YourName(expectedFn, expectedLn);
+		assertEquals(a.YourName(expectedFn, expectedLn), actualResult,"Please enter correct");
+		assertEquals(a.YourName(expectedFn, expectedLn), actualResult);
+		
+	}
+	
+	
+	
+	
+	
+	
+}

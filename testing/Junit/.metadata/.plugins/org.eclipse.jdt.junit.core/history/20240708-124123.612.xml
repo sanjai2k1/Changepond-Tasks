@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LifeCycleAnnotationTest" project="JUnitProjectTest" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="io.cal.LifeCycleAnnotationTest" time="0.042" displayname="LifeCycleAnnotationTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]">
+    <testsuite name="io.cal.LifeCycleAnnotationTest$testPositiveNumber" time="0.042" displayname="testPositiveNumber" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]/[nested-class:testPositiveNumber]">
+      <testcase name="testPositiveNo" classname="io.cal.LifeCycleAnnotationTest.testPositiveNumber" time="0.042" displayname="testPositiveNo()" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]/[nested-class:testPositiveNumber]/[method:testPositiveNo()]">
+        <failure>
+          <expected>2</expected>
+          <actual>9</actual>
+          org.opentest4j.AssertionFailedError: should retur osssive ot not ==&gt; expected: &lt;2&gt; but was: &lt;9&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)&#13;
+	at io.cal.LifeCycleAnnotationTest$testPositiveNumber.testPositiveNo(LifeCycleAnnotationTest.java:66)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

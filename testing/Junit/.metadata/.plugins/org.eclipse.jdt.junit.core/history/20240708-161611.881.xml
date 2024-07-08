@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AmazonCreateAnAccountPageTest" project="JUnitProjectTest" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="io.cal.AmazonCreateAnAccountPageTest" time="7.346" displayname="AmazonCreateAnAccountPageTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]">
+    <testcase name="testContinueButton" classname="io.cal.AmazonCreateAnAccountPageTest" time="0.025" displayname="testContinueButton()" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:testContinueButton()]"/>
+    <testcase name="init" classname="io.cal.AmazonCreateAnAccountPageTest" time="0.035" displayname="init(TestInfo, TestReporter)" parameters="org.junit.jupiter.api.TestInfo,org.junit.jupiter.api.TestReporter" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:init(org.junit.jupiter.api.TestInfo, org.junit.jupiter.api.TestReporter)]"/>
+    <testcase name="checkpasswordTest" classname="io.cal.AmazonCreateAnAccountPageTest" time="7.283" displayname="checkpasswordTest()" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:checkpasswordTest()]"/>
+  </testsuite>
+</testrun>

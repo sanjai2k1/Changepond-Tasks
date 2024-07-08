@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ConditionalAssumptionsTest" project="JUnitProjectTest" tests="2" started="2" failures="1" errors="0" ignored="1">
+  <testsuite name="io.cal.ConditionalAssumptionsTest" time="0.046" displayname="ConditionalAssumptionsTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.ConditionalAssumptionsTest]">
+    <testcase name="testOS" classname="io.cal.ConditionalAssumptionsTest" time="0.0" ignored="true" displayname="testOS()" uniqueid="[engine:junit-jupiter]/[class:io.cal.ConditionalAssumptionsTest]/[method:testOS()]"/>
+    <testcase name="testMultiply" classname="io.cal.ConditionalAssumptionsTest" time="0.046" displayname="testMultiply()" uniqueid="[engine:junit-jupiter]/[class:io.cal.ConditionalAssumptionsTest]/[method:testMultiply()]">
+      <failure>
+        <expected>8
+
+</expected>
+        <actual>4
+
+</actual>
+        org.opentest4j.MultipleFailuresError: Multiple Failures (1 failure)&#13;
+	org.opentest4j.AssertionFailedError: expected: &lt;8&gt; but was: &lt;4&gt;&#13;
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)&#13;
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)&#13;
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)&#13;
+	at io.cal.ConditionalAssumptionsTest.testMultiply(ConditionalAssumptionsTest.java:34)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	Suppressed: org.opentest4j.AssertionFailedError: expected: &lt;8&gt; but was: &lt;4&gt;&#13;
+		at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+		at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+		at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+		at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+		at io.cal.ConditionalAssumptionsTest.lambda$0(ConditionalAssumptionsTest.java:35)&#13;
+		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)&#13;
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)&#13;
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)&#13;
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)&#13;
+		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)&#13;
+		... 7 more&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

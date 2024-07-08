@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReactRegisterationPageTest" project="ReactProjectJUnitTest" tests="6" started="6" failures="1" errors="0" ignored="0">
+  <testsuite name="io.ReactProject.ReactRegisterationPageTest" time="63.668" displayname="ReactRegisterationPageTest" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]">
+    <testcase name="EmailTest" classname="io.ReactProject.ReactRegisterationPageTest" time="17.531" displayname="EmailTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:EmailTest()]"/>
+    <testcase name="init" classname="io.ReactProject.ReactRegisterationPageTest" time="0.106" displayname="init(TestInfo, TestReporter)" parameters="org.junit.jupiter.api.TestInfo,org.junit.jupiter.api.TestReporter" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:init(org.junit.jupiter.api.TestInfo, org.junit.jupiter.api.TestReporter)]"/>
+    <testcase name="PasswordTest" classname="io.ReactProject.ReactRegisterationPageTest" time="22.661" displayname="PasswordTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:PasswordTest()]">
+      <failure>
+        <expected>true</expected>
+        <actual>false</actual>
+        org.opentest4j.AssertionFailedError: Password is incorrect format ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)&#13;
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)&#13;
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)&#13;
+	at io.ReactProject.ReactRegisterationPageTest.PasswordTest(ReactRegisterationPageTest.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="UserNameTest" classname="io.ReactProject.ReactRegisterationPageTest" time="10.094" displayname="UserNameTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:UserNameTest()]"/>
+    <testcase name="ContactTest" classname="io.ReactProject.ReactRegisterationPageTest" time="8.135" displayname="ContactTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:ContactTest()]"/>
+    <testcase name="NameTest" classname="io.ReactProject.ReactRegisterationPageTest" time="5.134" displayname="NameTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:NameTest()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,32 @@
+package io.reactProject;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+public class ReactRegisterationPage {
+
+	
+	
+	public  String Name(String input) {
+		return input;
+		}
+
+		public  String Contact(String input) {
+		return input;
+		}
+
+		public  String Email(String input) {
+		return input;
+		}
+
+		public  String UserName(String input) {
+		return input;
+		}
+
+		public  String Password(String input) {
+		return input;
+		}
+	
+	
+	
+}

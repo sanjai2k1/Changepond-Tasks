@@ -1,0 +1,31 @@
+package io.reactProject;
+
+
+
+public class ReactRegisterationPage {
+
+	
+	
+	public  String Name(String input) {
+		return input;
+		}
+
+		public  String Contact(String input) {
+		return input;
+		}
+
+		public  String Email(String input) {
+		return input;
+		}
+
+		public  String UserName(String input) {
+		return input;
+		}
+
+		public  String Password(String input) {
+		return input;
+		}
+	
+	
+	
+}

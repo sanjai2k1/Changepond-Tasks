@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LifeCycleAnnotationTest" project="JUnitProjectTest" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="io.cal.LifeCycleAnnotationTest" time="0.056" displayname="LifeCycleAnnotationTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]">
+    <testsuite name="io.cal.LifeCycleAnnotationTest$testPositiveNumber" time="0.056" displayname="testPositiveNumber" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]/[nested-class:testPositiveNumber]">
+      <testcase name="testNegativeNo" classname="io.cal.LifeCycleAnnotationTest.testPositiveNumber" time="0.048" displayname="testNegativeNo()" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]/[nested-class:testPositiveNumber]/[method:testNegativeNo()]">
+        <error>java.lang.NullPointerException: Cannot invoke "io.cal.LifeCycleAnnoatation.positive(int, int)" because "this.this$0.m" is null&#13;
+	at io.cal.LifeCycleAnnotationTest$testPositiveNumber.testNegativeNo(LifeCycleAnnotationTest.java:70)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="testPositiveNo" classname="io.cal.LifeCycleAnnotationTest.testPositiveNumber" time="0.006" displayname="testPositiveNo()" uniqueid="[engine:junit-jupiter]/[class:io.cal.LifeCycleAnnotationTest]/[nested-class:testPositiveNumber]/[method:testPositiveNo()]">
+        <error>java.lang.NullPointerException: Cannot invoke "io.cal.LifeCycleAnnoatation.positive(int, int)" because "this.this$0.m" is null&#13;
+	at io.cal.LifeCycleAnnotationTest$testPositiveNumber.testPositiveNo(LifeCycleAnnotationTest.java:65)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

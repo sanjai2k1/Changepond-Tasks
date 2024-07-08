@@ -1,0 +1,39 @@
+package com.APITesting;
+
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.http.ContentType;
+
+public class roomtest {
+	@Test
+	public void GETRooms() {
+		 baseURI = "http://localhost:8888";
+		 given().get("/rooms").then().statusCode(200).body("[0].id", equalTo("6a82")).log().all();
+//		 given().get("/users?page=2").then().statusCode(200).body("data[1].email",equalTo("lindsay.ferguson@reqres.in"));
+	}
+	
+	@Test
+	public void POSTRequest() {
+		Map<String,Object> map = new HashMap<String,Object>();
+		JSONObject request = new JSONObject(map);
+		request.put("name", "user5");
+		request.put("contact", "trainee");
+		request.put("username", "user5");
+		request.put("password", "User@2k1");
+		  JSONArray bookedrooms = new JSONArray();
+	        request.put("bookedrooms", bookedrooms);
+		System.out.println(request.toJSONString());
+		baseURI = "http://localhost:8888/";	
+		given().header("content-type","application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
+		.body(request.toJSONString()).post("/users").then().statusCode(201).log().all();
+	}
+}

@@ -1,0 +1,53 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.BeforeEach;
+
+public class AmazonCreateHomePageTest {
+
+	AmazonCreateHomePage amazonCreateHomePAge;
+	Scanner sc;
+	
+	@BeforeEach 
+	void init() {
+		  
+		amazonCreateHomePAge = new AmazonCreateHomePage();
+		sc = new Scanner(System.in);
+	}
+
+//	@Test
+	void testUserName() {
+		
+		
+		String expectedName = "Ajith Kumar";
+		System.out.print("Enter First Name : ");
+		String FirstName = sc.nextLine();
+		System.out.print("Enter Last Name : ");
+		String LastName = sc.nextLine();
+		String actualName = amazonCreateHomePAge.YourName(FirstName , LastName);
+		
+		assertEquals(expectedName,actualName);
+		
+	}
+	
+	//@Test
+	void testMobNoAndEmailId() {
+		
+		long expectedMobNo = 9380410103l;
+		String expetedEmailId = "abcd@gmail.com";
+		
+		String actualResult = amazonCreateHomePAge.EmailandContact(9380410103l, expetedEmailId);
+		
+		assertEquals(expectedMobNo+" "+expetedEmailId,actualResult);
+		
+		assertAll(
+				() -> assertEquals("9876543210 xyz@gmail.com",amazonCreateHomePAge.EmailandContact(9876543210l,"xyz")),
+				() -> assertEquals("9876543210 xyz@gmail.com",amazonCreateHomePAge.EmailandContact(9876543210l,"xyz")),
+				() -> assertEquals("9876543210 xyz@gmail.com",amazonCreateHomePAge.EmailandContact(9876543210l,"xyz"))
+				);
+	}
+}

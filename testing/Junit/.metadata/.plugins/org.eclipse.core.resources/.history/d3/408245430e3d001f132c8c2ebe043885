@@ -1,0 +1,65 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+
+import java.awt.font.GlyphJustificationInfo;
+import java.util.Scanner;
+
+import org.junit.jupiter.api.Test;
+
+public class AmazonCreateAnAccountPageTest {
+
+	AmazonCreateAnAcoountpage a = new AmazonCreateAnAcoountpage();
+	
+	@Test
+	void YourNameTest() {
+		String expectedFn = "sanjai";
+		String expectedLn = "J";
+		String actualResult = a.YourName("sanjai", "J");
+		assertAll(
+		()->assertEquals(a.YourName(expectedFn, expectedLn), actualResult,"Please enter correct"),
+		()->assertEquals(a.YourName(expectedFn, expectedLn), actualResult)
+				);
+	}
+	
+	
+	@Test
+	void  checkpasswordTest() {
+		boolean expectedPassString=true;
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter password");
+		String actualPassString = in.nextLine();
+		assertAll(
+		()->assertEquals(expectedPassString,!a.checkpassword(actualPassString)&& actualPassString.length()<6,"length is less than 6 ,it must me equal to 6"),
+		()->assertEquals(expectedPassString,!a.checkpassword(actualPassString)&& actualPassString.length()>6,"length is greater than 6 ,it must me equal to 6")
+		);
+		
+		
+	}
+	
+	@Test
+	void MobNoAndEmailTest() {
+		
+		long expectedMobileNo = 9176071379l;
+		String expectedEmailID = "abcd@gmail.com";
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter mobile no");
+		long actualMobileNo = in.nextLong();
+		in.nextLine();
+		System.out.println("enter email no");
+		String actualEmailId = in.nextLine();
+		
+		String actualResultString = a.MobNoAndEmail(String.valueOf(actualMobileNo), actualEmailId);
+		String expectedResultString = a.MobNoAndEmail(String.valueOf(expectedMobileNo), expectedEmailID);
+		assertEquals(expectedResultString,actualResultString,"Mobile and email are not entered correctly");
+		assertSame(expectedResultString,actualResultString,"Expected result should match with  actual");
+
+		
+		
+		
+	}
+	
+	
+}

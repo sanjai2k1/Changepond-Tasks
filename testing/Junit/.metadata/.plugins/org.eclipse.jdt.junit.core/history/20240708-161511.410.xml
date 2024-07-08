@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AmazonCreateAnAccountPageTest" project="JUnitProjectTest" tests="3" started="3" failures="0" errors="1" ignored="0">
+  <testsuite name="io.cal.AmazonCreateAnAccountPageTest" time="6.292" displayname="AmazonCreateAnAccountPageTest" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]">
+    <testcase name="testContinueButton" classname="io.cal.AmazonCreateAnAccountPageTest" time="0.024" displayname="testContinueButton()" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:testContinueButton()]"/>
+    <testcase name="init" classname="io.cal.AmazonCreateAnAccountPageTest" time="0.013" displayname="init()" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:init()]">
+      <error>java.lang.NullPointerException: Cannot invoke "org.junit.jupiter.api.TestInfo.getTags()" because "this.testInfo" is null&#13;
+	at io.cal.AmazonCreateAnAccountPageTest.init(AmazonCreateAnAccountPageTest.java:98)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="checkpasswordTest" classname="io.cal.AmazonCreateAnAccountPageTest" time="6.253" displayname="checkpasswordTest()" uniqueid="[engine:junit-jupiter]/[class:io.cal.AmazonCreateAnAccountPageTest]/[method:checkpasswordTest()]"/>
+  </testsuite>
+</testrun>

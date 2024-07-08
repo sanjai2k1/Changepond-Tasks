@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReactRegisterationPageTest" project="ReactProjectJUnitTest" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="io.ReactProject.ReactRegisterationPageTest" time="6.176" displayname="ReactRegisterationPageTest" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]">
+    <testcase name="init" classname="io.ReactProject.ReactRegisterationPageTest" time="0.041" displayname="init(TestInfo, TestReporter)" parameters="org.junit.jupiter.api.TestInfo,org.junit.jupiter.api.TestReporter" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:init(org.junit.jupiter.api.TestInfo, org.junit.jupiter.api.TestReporter)]"/>
+    <testcase name="PasswordTest" classname="io.ReactProject.ReactRegisterationPageTest" time="6.133" displayname="PasswordTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:PasswordTest()]"/>
+  </testsuite>
+</testrun>

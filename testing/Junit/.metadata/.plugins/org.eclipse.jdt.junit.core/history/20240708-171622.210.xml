@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReactRegisterationPageTest" project="ReactProjectJUnitTest" tests="6" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="ReactRegisterationPageTest" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]">
+    <testcase name="EmailTest" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="EmailTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:EmailTest()]"/>
+    <testcase name="init" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="init(TestInfo, TestReporter)" parameters="org.junit.jupiter.api.TestInfo,org.junit.jupiter.api.TestReporter" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:init(org.junit.jupiter.api.TestInfo, org.junit.jupiter.api.TestReporter)]"/>
+    <testcase name="PasswordTest" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="PasswordTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:PasswordTest()]"/>
+    <testcase name="UserNameTest" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="UserNameTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:UserNameTest()]"/>
+    <testcase name="ContactTest" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="ContactTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:ContactTest()]"/>
+    <testcase name="NameTest" classname="io.ReactProject.ReactRegisterationPageTest" incomplete="true" displayname="NameTest()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:NameTest()]"/>
+  </testsuite>
+</testrun>

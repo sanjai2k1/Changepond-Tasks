@@ -1,0 +1,78 @@
+package io.cal;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class LifeCycleAnnotationTest {
+
+	LifeCycleAnnoatation m;
+//	@BeforeAll
+//static	void beforeAll() {
+//		System.out.println("this will run before al the methods");
+//	}
+//	
+//	@AfterAll
+//static	void afterAll() {
+//		
+//		System.out.println("this will run at last");
+//		
+//	}
+//	
+//	@BeforeEach
+//	void init() {
+//	m = new LifeCycleAnnoatation();	
+//	}
+//	
+//	@AfterEach
+//	void cleanUp() {
+//		System.out.println("Clean Up now");
+//	}
+//	@Test
+//	void testSquare() {
+//		int expected = 25;
+//		int actual = m.square(5);
+//		
+//		
+//		
+//		assertEquals(expected,actual,"Pass");
+//	}
+//	
+//	@Test
+//	void testCube() {
+//		int expected = 125;
+//		int actual = m.cube(5);
+//		
+//		
+//		
+//		assertEquals(expected,actual,"Pass");
+//	}
+//	
+
+	@Nested
+	class testPositiveNumber {
+
+		@BeforeEach
+		void init() {
+			m = new LifeCycleAnnoatation();
+		}
+
+		@Test
+		void testPositiveNo() {
+			assertEquals(2, m.positive(2, 2), "should retur osssive ot not");
+		}
+
+//		@Test
+		void testNegativeNo() {
+			int expected = -2;
+			int actual = m.positive(-2, 2);
+			assertEquals(expected, actual, () -> "should no reeeuen negative value");
+
+		}
+	}
+
+}

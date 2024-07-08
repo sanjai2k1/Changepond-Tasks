@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReactRegisterationPageTest" project="ReactProjectJUnitTest" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="io.ReactProject.ReactRegisterationPageTest" time="2.029" displayname="ReactRegisterationPageTest" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]">
+    <testcase name="Name" classname="io.ReactProject.ReactRegisterationPageTest" time="2.029" displayname="Name()" uniqueid="[engine:junit-jupiter]/[class:io.ReactProject.ReactRegisterationPageTest]/[method:Name()]">
+      <failure>org.opentest4j.AssertionFailedError: Name cannot be empty..&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at io.ReactProject.ReactRegisterationPageTest.Name(ReactRegisterationPageTest.java:23)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

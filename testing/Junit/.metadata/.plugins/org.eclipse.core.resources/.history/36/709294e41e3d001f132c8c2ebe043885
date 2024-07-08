@@ -1,0 +1,67 @@
+package io.ReactProject;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.Test;
+
+import io.reactProject.ReactRegisterationPage;
+
+
+
+public class ReactRegisterationPageTest {
+	ReactRegisterationPage r = new ReactRegisterationPage();
+	Scanner in = new Scanner(System.in);
+	
+//	@Test
+	void EmailTest() {
+		String expected = "sanjai2k1j@gmail.com";
+		System.out.println("enter email");
+		String actual = in.nextLine();	
+		if(actual.trim()=="") {
+			fail("email cannot be empty..");
+		}
+		assertTrue(r.Email(actual),"Not Valid email");
+		assertEquals(expected, actual,"email is not same");
+
+		
+	}
+	
+//	@Test
+	void ContactTest() {
+		String expected = "9176071379";
+		System.out.println("enter contact");
+		String actual = in.nextLine();	
+		if(actual.trim()=="") {
+			fail("contact cannot be empty..");
+		}
+		assertTrue(r.Contact(actual),"length must be length 10");
+		assertEquals(expected, actual,"contact is not same");
+
+		
+		
+	}
+	
+	
+	
+//	@Test
+	void NameTest() {
+		String expected = "sanjai";
+		System.out.println("enter name");
+		String actual = in.nextLine();	
+		if(actual.trim()=="") {
+			fail("Name cannot be empty..");
+		}
+		assertTrue(r.Name(actual),"length must be between 3 and 20");
+		assertEquals(expected, actual,"Name is not same");
+		
+		
+	}
+	
+
+	
+	
+}
