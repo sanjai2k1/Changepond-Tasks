@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            height: 150px;
+            width: 200px;
+            margin: auto;
+            border: 3px solid blue;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <label for="">enter first number</label>
+        <input type="text" name="num1" id="num1"> <br> <br>
+        <label for="">enter second number</label>
+        <input type="text" name="num2" id="num2"> <br> <br>
+        <input type="button" value="Add" onclick="addition()">
+        <input type="button" value="Sub" onclick="subraction()">
+        <input type="button" value="Mul" onclick="multiplication()">
+        <input type="button" value="Div" onclick="division()">
+        <br>
+        <b>Result : <span id="result"></span></b>
+    </form>
+    <script>
+        let num1 = document.getElementById("num1")
+        let num2 = document.getElementById("num2")
+        let ans = document.getElementById("result")
+        let addition = ()=> ans.innerHTML = parseInt(num1.value) + parseInt(num2.value)
+        let subraction =()=> ans.innerHTML = parseInt(num1.value) - parseInt(num2.value)
+        let multiplication = ()=> ans.innerHTML = parseInt(num1.value) * parseInt(num2.value)
+        let division =()=>ans.innerHTML = parseInt(num1.value) / parseInt(num2.value)
+    </script>
+</body>
+
+</html>
