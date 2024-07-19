@@ -1,0 +1,235 @@
+\i C:/Users/sanjai.j/Downloads/clubdata.sql/clubdata.sql
+
+Retrieve everything from a table
+
+select name,
+CASE
+    WHEN monthlymaintenance >100 THEN 'Expensive'
+    ELSE 'cheap'
+END from facilities;
+
+
+select * from members where joindate :: date >= date '2012-09-01';
+
+
+select distinct(surname) from members order by surname asc limit 10;
+
+
+
+select surname from members union select name from facilities; 
+
+
+
+select max(joindate) from members;
+
+
+select firstname,surname,joindate from members where joindate = 
+(select max(joindate) from members);
+
+
+
+select starttime from bookings where memid = (select memid from members where  firstname = 'David' and surname = 'Farrell');
+
+
+SELECT 
+b.starttime,f.name
+FROM facilities as f
+inner join bookings as b using(facid) 
+where f.name like 'Tennis%' and Date(b.starttime ::date) = '2012-09-21';
+
+
+
+
+
+select firstname,surname from members where recommended by is not null;
+
+select firstname,surname from members where memid in (select distinct(recommendedby) from members) order by surname,firstname;  
+
+select m.firstname,m.surname,r.firstname,r.surname from members as m  join members as r on where m.memid = r.recommendedby;
+
+SELECT m.firstname, m.surname, r.firstname AS recommender_firstname, r.surname AS recommender_surname
+FROM members AS m
+LEFT JOIN members AS r ON m.recommendedby = r.memid order by surname, firstname;
+
+
+
+SELECT CONCAT(members.firstname, ' ', members.surname) AS name, facilities.name FROM members INNER JOIN bookings USING(memid) INNER JOIN facilities ON facilities.facid = bookings.facid 
+WHERE facilities.name LIKE 'Tennis%';
+
+
+
+select mems.firstname || ' ' || mems.surname as member, facs.name as facility, case when mems.memid = 0 then bks.slots*facs.guestcost else bks.slots*facs.membercost end as cost from cd.members mems inner join cd.bookings bks on mems.memid = bks.memid inner join cd.facilities facs on bks.facid = facs.facid where bks.starttime >= '2012-09-14' and bks.starttime < '2012-09-15' and ( (mems.memid = 0 and bks.slots*facs.guestcost > 30) or (mems.memid != 0 and bks.slots*facs.membercost > 30) ) order by cost desc;
+
+
+
+
+
+SELECT CONCAT(m.firstname, ' ', m.surname) AS member_name, 
+(SELECT CONCAT(r.firstname, ' ', r.surname) 
+FROM members AS r 
+WHERE r.memid = m.recommendedby) AS recommender_name
+FROM members AS m order by member_name;
+
+select firstname,(select facid from bookings as b where b.memid =  m.memid  ) from members an m;
+
+select member, facility, cost from (
+	select 
+		mems.firstname || ' ' || mems.surname as member,
+		facs.name as facility,
+		case
+			when mems.memid = 0 then
+				bks.slots*facs.guestcost
+			else
+				bks.slots*facs.membercost
+		end as cost
+		from
+			cd.members mems
+			inner join cd.bookings bks
+				on mems.memid = bks.memid
+			inner join cd.facilities facs
+				on bks.facid = facs.facid
+		where
+			bks.starttime >= '2012-09-14' and
+			bks.starttime < '2012-09-15'
+	) as bookings
+	where cost > 30
+order by cost desc; 
+
+
+
+
+
+Insert into facilities values(9,'Spa',20,30,100000,800);
+
+Insert into facilities values(9,'Spa',20,30,100000,800),
+(10,'Squash Court 2',3.5,17.5,5000,80);
+
+
+
+ALTER TABLE facilities ADD COLUMN new_facid SERIAL;
+UPDATE facilities SET new_facid = facid;
+ALTER TABLE facilities DROP COLUMN facid;
+ALTER TABLE facilities RENAME COLUMN new_facid TO facid;
+
+
+
+
+insert into cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance) select (select max(facid) from cd.facilities)+1, 'Spa', 20, 30, 100000, 800;
+
+update facilities set initialoutlay = 10000 where facid = (
+
+select facid from facilities where name like 'Tennis Court 2');
+
+
+
+update cd.facilities
+    set
+        membercost = 6,
+        guestcost = 30
+    where facid in (0,1);  
+
+
+update facilities set membercost = membercost+0.1*(select membercost from facilities where name = 'Tennis Court 1'),
+guestcost = guestcost+0.1*(select membercost from facilities where name = 'Tennis Court 1') where name = 'Tennis Court 2';
+ DELETE FROM bookings;
+
+
+
+
+
+
+delete from members where memid = (select memid from members where memid not in
+(select memid from bookings));
+
+
+delete from members where memid In (select memid from members where memid not in
+(select memid from bookings));
+
+
+
+
+select count(*) from facilities;
+
+
+
+
+
+select count(*) from facilities where guestcost >= 10 ;
+
+
+
+select * from members order by recommendby;
+
+select recommendedby,count(recommendedby) from members group by recommendedby  order by recommendedby;
+
+
+select * from facilities order by facid;
+
+
+
+select  facid ,count(facid) from bookings inner join facilities using (facid) group by facid order by facid ; 
+
+
+
+SELECT facid ,count(facid)
+FROM bookings 
+WHERE starttime::date >= '2012-09-01' 
+AND starttime::date < '2012-10-01' group by facid order by facid;
+
+
+SELECT facid,EXTRACT(month FROM starttime ::date) AS month, sum(slots) from  bookings where EXTRACT(year FROM starttime :: date) = 2012 group by month,facid order by facid ;
+
+select count(distinct(memid)) from bookings inner join facilities using(facid);
+
+
+select facid , sum(slots) as tot from bookings group by facid having sum(slots) >1000 order by facid;\
+
+select name,sum( slots *
+case
+ WHEN memid = 0 THEN guestcost 
+    ELSE membercost
+
+end
+) as revenue
+
+ from bookings inner join facilities using(facid) group by name,facid order by revenue;
+
+select name,sum( slots *
+case
+ WHEN memid = 0 THEN guestcost 
+    ELSE membercost
+
+end
+) as revenue
+
+ from bookings inner join facilities using(facid)
+ group by name,facid 
+HAVING SUM(slots * 
+CASE 
+WHEN memid = 0 THEN guestcost 
+ELSE membercost 
+END) < 1000
+order by revenue ;
+
+
+select facid,sum( slots *
+case
+ WHEN memid = 0 THEN guestcost 
+    ELSE membercost
+
+end
+) as revenue
+
+ from bookings inner join facilities using(facid)
+ group by name,facid 
+
+order by revenue desc limit 1;
+
+
+
+
+
+
+select facid ,extract(month FROM  starttime::date) as month ,sum(slots) from bookings where starttime >= '2012-01-01'
+and starttime < '2013-01-01' 
+group by rollup(facid ,month ) order by facid,month;
