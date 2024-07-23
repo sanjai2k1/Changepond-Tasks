@@ -1,0 +1,6 @@
+create menu_card list
+veg_starter = ['paneer 65','chilly paneer','veg crispy']
+1,display menu_card
+2,add starter in menu_card
+3.update starter in menu menu_card
+4.remove starter in menu_card
