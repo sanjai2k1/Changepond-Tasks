@@ -23,16 +23,16 @@ def main():
         choice=int(input("enter choice : "))
         if choice==1:
             num1,num2=maps[0]()
-            print(maps[1](num1,num2)) 
+            print(maps[choice](num1,num2)) 
         elif choice==2:
             num1,num2=maps[0]()
-            print(maps[2](num1,num2))
+            print(maps[choice](num1,num2))
         elif choice==3:
             num1,num2=maps[0]()
-            print(maps[3](num1,num2))
+            print(maps[choice](num1,num2))
         elif choice==4:
             num1,num2=maps[0]()
-            print(maps[4](num1,num2)) 
+            print(maps[choice](num1,num2)) 
         elif choice==5:
             break           
             

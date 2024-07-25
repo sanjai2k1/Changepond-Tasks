@@ -7,8 +7,9 @@ def main():
         subject_marks.append(mark)
     print(subject_marks)
     avg = sum(subject_marks)//len(subject_marks)
+    print(avg)
     for i in range(100,0,-10):
-        if avg >= i:
+        if avg >= i and avg>=i-10:
             print("your grade is ",grades[i])
             break
 
